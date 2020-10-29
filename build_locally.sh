@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 printf "####### RESTFUL-BOOKER-PLATFORM #######
 ####                               ####

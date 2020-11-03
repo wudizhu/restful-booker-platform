@@ -34,6 +34,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 14.0.1
-      - run: cd ../..
+
       - name: Build with Maven
+        working-directory: ./
         run: mvn clean install -Dvisual.skip.test=true

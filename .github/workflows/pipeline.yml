@@ -37,4 +37,4 @@ jobs:
 
       - name: Build with Maven
         working-directory: ./
-        run: mvn clean install -Dvisual.skip.test=true
+        run: mvn install -Dvisual.skip.test=true

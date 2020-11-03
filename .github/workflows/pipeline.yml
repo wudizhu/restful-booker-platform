@@ -23,9 +23,12 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd assets/js
-      - run: npm install
-      - run: npm run build --if-present
+      - name: install npm packages and build frontend
+        working-directory: ./assets/js
+        run: npm install
+      - name: build frontend
+        working-directory: ./assets/js
+        run: npm run build --if-present
 
       - name: Set up JDK 14.0.1
         uses: actions/setup-java@v1
